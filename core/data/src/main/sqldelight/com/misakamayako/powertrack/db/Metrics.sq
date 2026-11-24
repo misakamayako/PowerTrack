@@ -1,0 +1,59 @@
+-- §3.1 PR / 体测 / app 元数据
+CREATE TABLE personal_record (
+    id             TEXT NOT NULL PRIMARY KEY,
+    exercise_id    TEXT NOT NULL REFERENCES exercise(id) ON DELETE CASCADE,
+    kind           TEXT NOT NULL,
+    value          REAL NOT NULL,
+    unit           TEXT NOT NULL,
+    session_set_id TEXT,
+    achieved_at    INTEGER NOT NULL
+);
+
+CREATE INDEX idx_pr_exercise ON personal_record(exercise_id, kind);
+
+CREATE TABLE body_metric (
+    id            TEXT NOT NULL PRIMARY KEY,
+    local_date    TEXT NOT NULL,
+    weight_kg     REAL,
+    body_fat_pct  REAL,
+    note          TEXT
+);
+
+CREATE TABLE app_meta (
+    key   TEXT NOT NULL PRIMARY KEY,
+    value TEXT NOT NULL
+);
+
+selectAllPrs:
+SELECT p.*, e.name AS exerciseName
+FROM personal_record p
+JOIN exercise e ON e.id = p.exercise_id
+ORDER BY p.achieved_at DESC;
+
+selectPrsForExercise:
+SELECT p.*, e.name AS exerciseName
+FROM personal_record p
+JOIN exercise e ON e.id = p.exercise_id
+WHERE p.exercise_id = ?
+ORDER BY p.kind;
+
+selectPr:
+SELECT * FROM personal_record WHERE exercise_id = ? AND kind = ? LIMIT 1;
+
+-- personal_record 没有子表，INSERT OR REPLACE 是安全的
+upsertPr:
+INSERT OR REPLACE INTO personal_record(id, exercise_id, kind, value, unit, session_set_id, achieved_at)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+selectBodyMetrics:
+SELECT * FROM body_metric ORDER BY local_date DESC LIMIT :limitCount;
+
+insertBodyMetric:
+INSERT OR REPLACE INTO body_metric(id, local_date, weight_kg, body_fat_pct, note)
+VALUES (?, ?, ?, ?, ?);
+
+getMeta:
+SELECT value FROM app_meta WHERE key = ?;
+
+setMeta:
+INSERT OR REPLACE INTO app_meta(key, value) VALUES (?, ?);

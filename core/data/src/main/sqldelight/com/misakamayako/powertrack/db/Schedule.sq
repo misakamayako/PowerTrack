@@ -1,0 +1,132 @@
+-- §2.1 / §3.1 排期实例
+-- 注意：没有 completed_session_id 列。与实际的关联只在 workout_session.source_scheduled_id 一个方向，
+-- COMPLETED 状态由该列反查得出（铁律 3）。
+CREATE TABLE scheduled_session (
+    id               TEXT NOT NULL PRIMARY KEY,
+    local_date       TEXT NOT NULL,
+    routine_id       TEXT REFERENCES routine(id) ON DELETE SET NULL,
+    routine_snapshot TEXT,
+    status           TEXT NOT NULL,
+    notes            TEXT,
+    created_at       INTEGER NOT NULL
+);
+
+CREATE INDEX idx_scheduled_date_status ON scheduled_session(local_date, status);
+
+selectBetween:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+WHERE ss.local_date BETWEEN ? AND ?
+ORDER BY ss.local_date, ss.created_at;
+
+selectUpcoming:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+WHERE ss.local_date >= ?
+ORDER BY ss.local_date, ss.created_at
+LIMIT :limitCount;
+
+selectNextPlanned:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+WHERE ss.local_date >= ? AND ss.status = 'PLANNED'
+ORDER BY ss.local_date, ss.created_at
+LIMIT 1;
+
+selectAll:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+ORDER BY ss.local_date DESC, ss.created_at DESC;
+
+selectRecent:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+ORDER BY ss.local_date DESC, ss.created_at DESC
+LIMIT :limitCount;
+
+selectById:
+SELECT ss.id AS id,
+       ss.local_date AS localDate,
+       ss.routine_id AS routineId,
+       ss.routine_snapshot AS routineSnapshot,
+       ss.status AS status,
+       ss.notes AS notes,
+       ss.created_at AS createdAt,
+       r.name AS routineName,
+       COALESCE((SELECT w.id FROM workout_session w
+         WHERE w.source_scheduled_id = ss.id AND w.finish_kind = 'FINISHED'
+         ORDER BY w.ended_at DESC LIMIT 1), '') AS completedSessionId
+FROM scheduled_session ss
+LEFT JOIN routine r ON r.id = ss.routine_id
+WHERE ss.id = ?;
+
+insert:
+INSERT INTO scheduled_session(id, local_date, routine_id, routine_snapshot, status, notes, created_at)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateStatus:
+UPDATE scheduled_session SET status = ? WHERE id = ?;
+
+updateSnapshot:
+UPDATE scheduled_session SET routine_snapshot = ? WHERE id = ?;
+
+skipOverdue:
+UPDATE scheduled_session SET status = 'SKIPPED' WHERE status = 'PLANNED' AND local_date < ?;
+
+deleteById:
+DELETE FROM scheduled_session WHERE id = ?;

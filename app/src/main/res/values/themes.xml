@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PowerTrack" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0E0E11</item>
+        <!--
+          不在这里写死状态栏 / 导航栏颜色：Activity 里 enableEdgeToEdge() 会在运行时把两条系统栏
+          都设成透明，并处理图标明暗。写死 OPAQUE 颜色会让「置底内容延伸到系统栏下面」失效，
+          看起来像底部多出一条空白。
+        -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+</resources>

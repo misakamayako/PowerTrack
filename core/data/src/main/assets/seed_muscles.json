@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "muscles": [
+    {
+      "id": "chest",
+      "parentId": null,
+      "name": "胸部",
+      "nameEn": "Chest",
+      "region": "upper",
+      "depth": 0,
+      "orderIndex": 0
+    },
+    {
+      "id": "back",
+      "parentId": null,
+      "name": "背部",
+      "nameEn": "Back",
+      "region": "upper",
+      "depth": 0,
+      "orderIndex": 1
+    },
+    {
+      "id": "shoulder",
+      "parentId": null,
+      "name": "肩部",
+      "nameEn": "Shoulders",
+      "region": "upper",
+      "depth": 0,
+      "orderIndex": 2
+    },
+    {
+      "id": "arm",
+      "parentId": null,
+      "name": "手臂",
+      "nameEn": "Arms",
+      "region": "upper",
+      "depth": 0,
+      "orderIndex": 3
+    },
+    {
+      "id": "forearm",
+      "parentId": null,
+      "name": "前臂",
+      "nameEn": "Forearms",
+      "region": "upper",
+      "depth": 0,
+      "orderIndex": 4
+    },
+    {
+      "id": "leg",
+      "parentId": null,
+      "name": "腿部",
+      "nameEn": "Legs",
+      "region": "lower",
+      "depth": 0,
+      "orderIndex": 5
+    },
+    {
+      "id": "glute",
+      "parentId": null,
+      "name": "臀部",
+      "nameEn": "Glutes",
+      "region": "lower",
+      "depth": 0,
+      "orderIndex": 6
+    },
+    {
+      "id": "core",
+      "parentId": null,
+      "name": "核心",
+      "nameEn": "Core",
+      "region": "core",
+      "depth": 0,
+      "orderIndex": 7
+    },
+    {
+      "id": "calf",
+      "parentId": null,
+      "name": "小腿",
+      "nameEn": "Calves",
+      "region": "lower",
+      "depth": 0,
+      "orderIndex": 8
+    },
+    {
+      "id": "chest.pec_major.sternal",
+      "parentId": "chest",
+      "name": "胸大肌-胸肋部",
+      "nameEn": "Pectoralis Major (Sternal)",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "chest.pec_major.clavicular",
+      "parentId": "chest",
+      "name": "胸大肌-锁骨部",
+      "nameEn": "Pectoralis Major (Clavicular)",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "back.latissimus_dorsi",
+      "parentId": "back",
+      "name": "背阔肌",
+      "nameEn": "Latissimus Dorsi",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "back.trapezius",
+      "parentId": "back",
+      "name": "斜方肌",
+      "nameEn": "Trapezius",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "back.rhomboids",
+      "parentId": "back",
+      "name": "菱形肌",
+      "nameEn": "Rhomboids",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 2
+    },
+    {
+      "id": "shoulder.delt.anterior",
+      "parentId": "shoulder",
+      "name": "三角肌-前束",
+      "nameEn": "Anterior Deltoid",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "shoulder.delt.lateral",
+      "parentId": "shoulder",
+      "name": "三角肌-中束",
+      "nameEn": "Lateral Deltoid",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "shoulder.delt.posterior",
+      "parentId": "shoulder",
+      "name": "三角肌-后束",
+      "nameEn": "Posterior Deltoid",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 2
+    },
+    {
+      "id": "arm.biceps",
+      "parentId": "arm",
+      "name": "肱二头肌",
+      "nameEn": "Biceps Brachii",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "arm.triceps",
+      "parentId": "arm",
+      "name": "肱三头肌",
+      "nameEn": "Triceps Brachii",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "arm.brachialis",
+      "parentId": "arm",
+      "name": "肱肌",
+      "nameEn": "Brachialis",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 2
+    },
+    {
+      "id": "forearm.flexors",
+      "parentId": "forearm",
+      "name": "前臂屈肌群",
+      "nameEn": "Forearm Flexors",
+      "region": "upper",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "leg.quadriceps",
+      "parentId": "leg",
+      "name": "股四头肌",
+      "nameEn": "Quadriceps",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "leg.hamstrings",
+      "parentId": "leg",
+      "name": "腘绳肌",
+      "nameEn": "Hamstrings",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "leg.adductors",
+      "parentId": "leg",
+      "name": "内收肌群",
+      "nameEn": "Adductors",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 2
+    },
+    {
+      "id": "glute.maximus",
+      "parentId": "glute",
+      "name": "臀大肌",
+      "nameEn": "Gluteus Maximus",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "glute.medius",
+      "parentId": "glute",
+      "name": "臀中肌",
+      "nameEn": "Gluteus Medius",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "core.rectus_abdominis",
+      "parentId": "core",
+      "name": "腹直肌",
+      "nameEn": "Rectus Abdominis",
+      "region": "core",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "core.obliques",
+      "parentId": "core",
+      "name": "腹斜肌",
+      "nameEn": "Obliques",
+      "region": "core",
+      "depth": 1,
+      "orderIndex": 1
+    },
+    {
+      "id": "calf.gastrocnemius",
+      "parentId": "calf",
+      "name": "腓肠肌",
+      "nameEn": "Gastrocnemius",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 0
+    },
+    {
+      "id": "calf.soleus",
+      "parentId": "calf",
+      "name": "比目鱼肌",
+      "nameEn": "Soleus",
+      "region": "lower",
+      "depth": 1,
+      "orderIndex": 1
+    }
+  ]
+}

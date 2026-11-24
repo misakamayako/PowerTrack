@@ -1,0 +1,249 @@
+-- §2.1 / §2.2 / §3.1 实际训练
+CREATE TABLE workout_session (
+    id                   TEXT NOT NULL PRIMARY KEY,
+    started_at           INTEGER NOT NULL,
+    ended_at             INTEGER,
+    source_scheduled_id  TEXT REFERENCES scheduled_session(id) ON DELETE SET NULL,
+    routine_snapshot     TEXT,
+    bodyweight_kg        REAL,
+    session_rpe          REAL,
+    notes                TEXT,
+    finish_kind          TEXT NOT NULL DEFAULT 'ACTIVE'
+);
+
+CREATE INDEX idx_workout_ended ON workout_session(ended_at DESC);
+CREATE INDEX idx_workout_source ON workout_session(source_scheduled_id);
+
+CREATE TABLE session_exercise (
+    id            TEXT NOT NULL PRIMARY KEY,
+    session_id    TEXT NOT NULL REFERENCES workout_session(id) ON DELETE CASCADE,
+    exercise_id   TEXT NOT NULL REFERENCES exercise(id) ON DELETE RESTRICT,
+    order_index   INTEGER NOT NULL,
+    superset_group TEXT,
+    notes         TEXT
+);
+
+CREATE UNIQUE INDEX idx_session_exercise_order ON session_exercise(session_id, order_index);
+
+CREATE TABLE session_set (
+    id              TEXT NOT NULL PRIMARY KEY,
+    session_exercise_id TEXT NOT NULL REFERENCES session_exercise(id) ON DELETE CASCADE,
+    order_index     INTEGER NOT NULL,
+    set_type        TEXT NOT NULL,
+    is_warmup       INTEGER NOT NULL DEFAULT 0,
+    prescribed_json TEXT,
+    rest_before_sec INTEGER,
+    rpe             REAL,
+    notes           TEXT
+);
+
+CREATE UNIQUE INDEX idx_session_set_order ON session_set(session_exercise_id, order_index);
+
+CREATE TABLE session_set_segment (
+    id             TEXT NOT NULL PRIMARY KEY,
+    session_set_id TEXT NOT NULL REFERENCES session_set(id) ON DELETE CASCADE,
+    order_index    INTEGER NOT NULL,
+    load_json      TEXT NOT NULL,
+    rep_json       TEXT NOT NULL,
+    is_failure     INTEGER NOT NULL DEFAULT 0,
+    partial_reps   INTEGER NOT NULL DEFAULT 0,
+    side           TEXT NOT NULL DEFAULT 'BOTH',
+    tempo          TEXT,
+    hold_ms        INTEGER,
+    offset_ms      INTEGER NOT NULL DEFAULT 0,
+    resolved_load_kg REAL,
+    resolved_reps    INTEGER,
+    e1rm             REAL
+);
+
+CREATE UNIQUE INDEX idx_segment_order ON session_set_segment(session_set_id, order_index);
+CREATE INDEX idx_segment_set ON session_set_segment(session_set_id);
+
+selectActive:
+SELECT * FROM workout_session WHERE finish_kind = 'ACTIVE' ORDER BY started_at DESC LIMIT 1;
+
+selectFinished:
+SELECT * FROM workout_session WHERE finish_kind = 'FINISHED' ORDER BY ended_at DESC LIMIT :limitCount;
+
+selectById:
+SELECT * FROM workout_session WHERE id = ?;
+
+selectLastFinished:
+SELECT * FROM workout_session WHERE finish_kind = 'FINISHED' ORDER BY ended_at DESC LIMIT 1;
+
+insert:
+INSERT INTO workout_session(
+    id, started_at, ended_at, source_scheduled_id, routine_snapshot,
+    bodyweight_kg, session_rpe, notes, finish_kind
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+updateFinish:
+UPDATE workout_session SET ended_at = ?, finish_kind = ?, session_rpe = ?, notes = ? WHERE id = ?;
+
+updateSourceScheduled:
+UPDATE workout_session SET source_scheduled_id = ? WHERE id = ?;
+
+deleteById:
+DELETE FROM workout_session WHERE id = ?;
+
+countFinished:
+SELECT COUNT(*) FROM workout_session WHERE finish_kind = 'FINISHED';
+
+selectExercises:
+SELECT se.id AS id,
+       se.session_id AS sessionId,
+       se.exercise_id AS exerciseId,
+       se.order_index AS orderIndex,
+       se.superset_group AS supersetGroup,
+       se.notes AS notes,
+       e.name AS exerciseName
+FROM session_exercise se
+JOIN exercise e ON e.id = se.exercise_id
+WHERE se.session_id = ?
+ORDER BY se.order_index;
+
+insertExercise:
+INSERT INTO session_exercise(id, session_id, exercise_id, order_index, superset_group, notes)
+VALUES (?, ?, ?, ?, ?, ?);
+
+selectSessionIdForExercise:
+SELECT session_id FROM session_exercise WHERE id = ? LIMIT 1;
+
+deleteExercise:
+DELETE FROM session_exercise WHERE id = ?;
+
+selectSetById:
+SELECT * FROM session_set WHERE id = ?;
+
+selectSetsForExercise:
+SELECT * FROM session_set WHERE session_exercise_id = ? ORDER BY order_index;
+
+selectSetsForSession:
+SELECT s.id AS id,
+       s.session_exercise_id AS sessionExerciseId,
+       s.order_index AS orderIndex,
+       s.set_type AS setType,
+       s.is_warmup AS isWarmup,
+       s.prescribed_json AS prescribedJson,
+       s.rest_before_sec AS restBeforeSec,
+       s.rpe AS rpe,
+       s.notes AS notes
+FROM session_set s
+JOIN session_exercise se ON se.id = s.session_exercise_id
+WHERE se.session_id = ?
+ORDER BY se.order_index, s.order_index;
+
+insertSet:
+INSERT INTO session_set(
+    id, session_exercise_id, order_index, set_type, is_warmup, prescribed_json, rest_before_sec, rpe, notes
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+updateSet:
+UPDATE session_set SET rpe = ?, notes = ?, rest_before_sec = ? WHERE id = ?;
+
+deleteSet:
+DELETE FROM session_set WHERE id = ?;
+
+maxSetOrder:
+SELECT COALESCE(MAX(order_index), -1) FROM session_set WHERE session_exercise_id = ?;
+
+selectSegmentById:
+SELECT * FROM session_set_segment WHERE id = ?;
+
+selectSegmentsForSet:
+SELECT * FROM session_set_segment WHERE session_set_id = ? ORDER BY order_index;
+
+selectSegmentsForSession:
+SELECT seg.id AS id,
+       seg.session_set_id AS sessionSetId,
+       seg.order_index AS orderIndex,
+       seg.load_json AS loadJson,
+       seg.rep_json AS repJson,
+       seg.is_failure AS isFailure,
+       seg.partial_reps AS partialReps,
+       seg.side AS side,
+       seg.tempo AS tempo,
+       seg.hold_ms AS holdMs,
+       seg.offset_ms AS offsetMs,
+       seg.resolved_load_kg AS resolvedLoadKg,
+       seg.resolved_reps AS resolvedReps,
+       seg.e1rm AS e1rm
+FROM session_set_segment seg
+JOIN session_set s ON s.id = seg.session_set_id
+JOIN session_exercise se ON se.id = s.session_exercise_id
+WHERE se.session_id = ?
+ORDER BY se.order_index, s.order_index, seg.order_index;
+
+insertSegment:
+INSERT INTO session_set_segment(
+    id, session_set_id, order_index, load_json, rep_json, is_failure, partial_reps,
+    side, tempo, hold_ms, offset_ms, resolved_load_kg, resolved_reps, e1rm
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+updateSegment:
+UPDATE session_set_segment SET
+    load_json = ?, rep_json = ?, is_failure = ?, partial_reps = ?,
+    resolved_load_kg = ?, resolved_reps = ?, e1rm = ?
+WHERE id = ?;
+
+deleteSegmentsForSet:
+DELETE FROM session_set_segment WHERE session_set_id = ?;
+
+maxSegmentOrder:
+SELECT COALESCE(MAX(order_index), -1) FROM session_set_segment WHERE session_set_id = ?;
+
+-- §6 默认值预填：同动作、同 setType 的上一次实际数据
+selectLastSetOf:
+SELECT s.*
+FROM session_set s
+JOIN session_exercise se ON se.id = s.session_exercise_id
+JOIN workout_session w ON w.id = se.session_id
+WHERE se.exercise_id = ? AND s.set_type = ? AND w.finish_kind = 'FINISHED'
+ORDER BY w.ended_at DESC, s.order_index DESC
+LIMIT 1;
+
+-- §5.5 历史最高 e1RM
+selectBestE1rm:
+SELECT MAX(seg.e1rm)
+FROM session_set_segment seg
+JOIN session_set s ON s.id = seg.session_set_id
+JOIN session_exercise se ON se.id = s.session_exercise_id
+JOIN workout_session w ON w.id = se.session_id
+WHERE se.exercise_id = ? AND w.finish_kind = 'FINISHED';
+
+-- §5.1 e1RM 曲线：每个 session 的最大值
+selectE1rmSeries:
+SELECT w.ended_at AS endedAt,
+       MAX(seg.e1rm) AS e1rm,
+       MAX(seg.resolved_load_kg) AS topLoadKg,
+       MAX(seg.resolved_reps) AS reps
+FROM session_set_segment seg
+JOIN session_set s ON s.id = seg.session_set_id
+JOIN session_exercise se ON se.id = s.session_exercise_id
+JOIN workout_session w ON w.id = se.session_id
+WHERE se.exercise_id = ? AND w.finish_kind = 'FINISHED' AND seg.e1rm IS NOT NULL
+GROUP BY w.id
+ORDER BY w.ended_at
+LIMIT :limitCount;
+
+-- 单动作每次训练的吨位
+selectTonnageSeries:
+SELECT w.ended_at AS endedAt,
+       SUM(seg.resolved_load_kg * seg.resolved_reps) AS tonnage,
+       COUNT(*) AS sets
+FROM session_set_segment seg
+JOIN session_set s ON s.id = seg.session_set_id
+JOIN session_exercise se ON se.id = s.session_exercise_id
+JOIN workout_session w ON w.id = se.session_id
+WHERE se.exercise_id = ? AND w.finish_kind = 'FINISHED'
+  AND seg.resolved_load_kg IS NOT NULL AND seg.resolved_reps IS NOT NULL
+GROUP BY w.id
+ORDER BY w.ended_at
+LIMIT :limitCount;
+
+-- 全部已完成训练（含快照），统计页用来算有效容量
+selectFinishedSince:
+SELECT * FROM workout_session WHERE finish_kind = 'FINISHED' AND ended_at >= ? ORDER BY ended_at DESC;
+-- 统计页：全部已完成训练
+selectAllFinished:
+SELECT * FROM workout_session WHERE finish_kind = 'FINISHED' ORDER BY ended_at DESC;

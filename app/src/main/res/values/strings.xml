@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerTrack</string>
+
+    <!-- 首页 -->
+    <string name="home_title">今天</string>
+    <string name="home_next_planned">下一次计划</string>
+    <string name="home_start_workout">开始这次训练</string>
+    <string name="home_free_workout">自由训练</string>
+    <string name="home_skip">跳过</string>
+    <string name="home_last_session">上次训练</string>
+    <string name="home_repeat_last">重复上次</string>
+    <string name="home_week_progress">本周进度</string>
+    <string name="home_no_schedule">本周无计划，想练就直接开一场。</string>
+
+    <!-- 动作库 -->
+    <string name="library_title">动作库</string>
+    <string name="library_search_hint">搜索动作名 / 器械</string>
+
+    <!-- 计划 -->
+    <string name="routine_list_title">训练计划</string>
+    <string name="routine_new">新建计划</string>
+    <string name="routine_save">保存</string>
+    <string name="routine_add_exercise">添加动作</string>
+    <string name="routine_add_set">添加一组</string>
+    <string name="routine_schedule">排期</string>
+
+    <!-- 练中 -->
+    <string name="workout_title">训练中</string>
+    <string name="workout_complete_set">完成本组</string>
+    <string name="workout_finish">结束并保存这次训练</string>
+    <string name="workout_discard">丢弃这次训练</string>
+    <string name="workout_undo">撤销</string>
+    <string name="workout_rest">组间休息</string>
+    <string name="workout_skip_rest">跳过休息</string>
+    <string name="workout_add_exercise">添加动作</string>
+
+    <!-- 历史 / 统计 / 设置 -->
+    <string name="history_title">训练历史</string>
+    <string name="stats_title">统计</string>
+    <string name="settings_title">设置</string>
+</resources>

@@ -1,0 +1,24 @@
+# Gradle / Android
+.gradle/
+build/
+*/build/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 构建日志
+build-log.txt
+build-warn.txt
+guard-probe.txt

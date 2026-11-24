@@ -1,0 +1,4501 @@
+{
+ "version": 1,
+ "exercises": [
+  {
+   "id": "barbell_back_squat",
+   "name": "杠铃深蹲",
+   "nameEn": "Barbell Back Squat",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双脚与肩同宽，屈髋屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_back_squat.mp4",
+   "photo": "exercises/barbell_back_squat.jpg"
+  },
+  {
+   "id": "barbell_front_squat",
+   "name": "杠铃前蹲",
+   "nameEn": "Barbell Front Squat",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "保持躯干直立，膝盖对准脚尖。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_front_squat.mp4",
+   "photo": "exercises/barbell_front_squat.jpg"
+  },
+  {
+   "id": "barbell_deadlift",
+   "name": "杠铃硬拉",
+   "nameEn": "Barbell Deadlift",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "背部挺直，杠铃贴腿拉起。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_deadlift.mp4",
+   "photo": "exercises/barbell_deadlift.jpg"
+  },
+  {
+   "id": "barbell_romanian_deadlift",
+   "name": "杠铃罗马尼亚硬拉",
+   "nameEn": "Barbell Romanian Deadlift",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "髋部后移，杠铃贴腿下放。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_romanian_deadlift.mp4",
+   "photo": "exercises/barbell_romanian_deadlift.jpg"
+  },
+  {
+   "id": "barbell_hip_thrust",
+   "name": "杠铃臀推",
+   "nameEn": "Barbell Hip Thrust",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肩胛靠凳，臀部发力向上推。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_hip_thrust.mp4",
+   "photo": "exercises/barbell_hip_thrust.jpg"
+  },
+  {
+   "id": "barbell_bench_press",
+   "name": "杠铃卧推",
+   "nameEn": "Barbell Bench Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肩胛后缩下沉，杠铃触胸后推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_bench_press.mp4",
+   "photo": "exercises/barbell_bench_press.jpg"
+  },
+  {
+   "id": "barbell_incline_bench_press",
+   "name": "杠铃上斜卧推",
+   "nameEn": "Barbell Incline Bench Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上斜三十度，杠铃触胸上推。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_incline_bench_press.mp4",
+   "photo": "exercises/barbell_incline_bench_press.jpg"
+  },
+  {
+   "id": "barbell_close_grip_bench_press",
+   "name": "杠铃窄距卧推",
+   "nameEn": "Barbell Close-Grip Bench Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手窄握，肘部贴身推起。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_close_grip_bench_press.mp4",
+   "photo": "exercises/barbell_close_grip_bench_press.jpg"
+  },
+  {
+   "id": "barbell_overhead_press",
+   "name": "杠铃站姿推举",
+   "nameEn": "Barbell Overhead Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "核心收紧，杠铃垂直上推。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_overhead_press.mp4",
+   "photo": "exercises/barbell_overhead_press.jpg"
+  },
+  {
+   "id": "barbell_push_press",
+   "name": "杠铃借力推举",
+   "nameEn": "Barbell Push Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "屈膝蓄力，顺势将杠铃推起。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "barbell_row",
+   "name": "杠铃俯身划船",
+   "nameEn": "Barbell Bent-Over Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "俯身四十五度，杠铃拉向腹部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_row.mp4",
+   "photo": "exercises/barbell_row.jpg"
+  },
+  {
+   "id": "barbell_pendlay_row",
+   "name": "杠铃爆发划船",
+   "nameEn": "Barbell Pendlay Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "杠铃从地面爆发拉起。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "barbell_t_bar_row",
+   "name": "杠铃T杠划船",
+   "nameEn": "Barbell T-Bar Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "胸腹贴垫，杠铃拉向下腹。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_t_bar_row.mp4",
+   "photo": "exercises/barbell_t_bar_row.jpg"
+  },
+  {
+   "id": "barbell_single_arm_landmine_row",
+   "name": "单臂地雷管划船",
+   "nameEn": "Single-Arm Landmine Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "单臂握杠，沿身体侧面拉起。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "barbell_curl",
+   "name": "杠铃弯举",
+   "nameEn": "Barbell Curl",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部固定，弯举至肩前。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_curl.mp4",
+   "photo": "exercises/barbell_curl.jpg"
+  },
+  {
+   "id": "barbell_preacher_curl",
+   "name": "杠铃牧师凳弯举",
+   "nameEn": "Barbell Preacher Curl",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "上臂贴垫，缓慢弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_preacher_curl.mp4",
+   "photo": "exercises/barbell_preacher_curl.jpg"
+  },
+  {
+   "id": "barbell_reverse_curl",
+   "name": "杠铃反握弯举",
+   "nameEn": "Barbell Reverse Curl",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "掌心向下，前臂发力弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.brachialis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_reverse_curl.mp4",
+   "photo": "exercises/barbell_reverse_curl.jpg"
+  },
+  {
+   "id": "barbell_good_morning",
+   "name": "杠铃早安式体前屈",
+   "nameEn": "Barbell Good Morning",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "微屈膝，髋部后移下放。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_good_morning.mp4",
+   "photo": "exercises/barbell_good_morning.jpg"
+  },
+  {
+   "id": "barbell_lunge",
+   "name": "杠铃箭步蹲",
+   "nameEn": "Barbell Lunge",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "前腿屈膝下蹲，后腿蹬地。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_lunge.mp4",
+   "photo": "exercises/barbell_lunge.jpg"
+  },
+  {
+   "id": "barbell_step_up",
+   "name": "杠铃登阶",
+   "nameEn": "Barbell Step-Up",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单脚踩稳，蹬地站上台阶。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "barbell_standing_calf_raise",
+   "name": "杠铃站姿提踵",
+   "nameEn": "Barbell Standing Calf Raise",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "前脚掌发力，脚跟抬高。",
+   "muscles": [
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.soleus",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_standing_calf_raise.mp4",
+   "photo": "exercises/barbell_standing_calf_raise.jpg"
+  },
+  {
+   "id": "barbell_shrug",
+   "name": "杠铃耸肩",
+   "nameEn": "Barbell Shrug",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肩膀下沉，斜方肌收缩耸肩。",
+   "muscles": [
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_shrug.mp4",
+   "photo": "exercises/barbell_shrug.jpg"
+  },
+  {
+   "id": "barbell_upright_row",
+   "name": "杠铃直立划船",
+   "nameEn": "Barbell Upright Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部高于手腕，拉至胸口。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_upright_row.mp4",
+   "photo": "exercises/barbell_upright_row.jpg"
+  },
+  {
+   "id": "barbell_high_pull",
+   "name": "杠铃高拉",
+   "nameEn": "Barbell High Pull",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "爆发提拉，肘部向上引导。",
+   "muscles": [
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "barbell_power_clean",
+   "name": "杠铃高翻",
+   "nameEn": "Barbell Power Clean",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "爆发伸髋，接杠后站直。",
+   "muscles": [
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "barbell_snatch",
+   "name": "杠铃抓举",
+   "nameEn": "Barbell Snatch",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "宽握杠铃，爆发上拉接杠。",
+   "muscles": [
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "barbell_thruster",
+   "name": "杠铃深蹲推举",
+   "nameEn": "Barbell Thruster",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "深蹲后站起，顺势推举。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "barbell_glute_bridge",
+   "name": "杠铃臀桥",
+   "nameEn": "Barbell Glute Bridge",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肩胛靠凳，臀部收紧顶髋。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_glute_bridge.mp4",
+   "photo": "exercises/barbell_glute_bridge.jpg"
+  },
+  {
+   "id": "barbell_seal_row",
+   "name": "杠铃俯卧划船",
+   "nameEn": "Barbell Seal Row",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "胸部贴凳，杠铃拉向腹部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "barbell_decline_bench_press",
+   "name": "杠铃下斜卧推",
+   "nameEn": "Barbell Decline Bench Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "下斜卧推，杠铃触胸推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/barbell_decline_bench_press.mp4",
+   "photo": "exercises/barbell_decline_bench_press.jpg"
+  },
+  {
+   "id": "barbell_floor_press",
+   "name": "杠铃地板卧推",
+   "nameEn": "Barbell Floor Press",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肘部触地，杠铃向上推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "barbell_reverse_lunge",
+   "name": "杠铃后撤箭步蹲",
+   "nameEn": "Barbell Reverse Lunge",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "向后撤步，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_reverse_lunge.mp4",
+   "photo": "exercises/barbell_reverse_lunge.jpg"
+  },
+  {
+   "id": "barbell_sumo_deadlift",
+   "name": "杠铃相扑硬拉",
+   "nameEn": "Barbell Sumo Deadlift",
+   "equipment": "barbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "宽站距，膝盖外展拉起。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_sumo_deadlift.mp4",
+   "photo": "exercises/barbell_sumo_deadlift.jpg"
+  },
+  {
+   "id": "barbell_skull_crusher",
+   "name": "杠铃仰卧臂屈伸",
+   "nameEn": "Barbell Skull Crusher",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上臂固定，前臂伸直下放。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_skull_crusher.mp4",
+   "photo": "exercises/barbell_skull_crusher.jpg"
+  },
+  {
+   "id": "barbell_wrist_curl",
+   "name": "杠铃腕弯举",
+   "nameEn": "Barbell Wrist Curl",
+   "equipment": "barbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "前臂贴垫，手腕向上弯举。",
+   "muscles": [
+    {
+     "muscleId": "forearm.flexors",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/barbell_wrist_curl.mp4",
+   "photo": "exercises/barbell_wrist_curl.jpg"
+  },
+  {
+   "id": "dumbbell_bench_press",
+   "name": "哑铃卧推",
+   "nameEn": "Dumbbell Bench Press",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肩胛后缩，哑铃下放后推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_bench_press.mp4",
+   "photo": "exercises/dumbbell_bench_press.jpg"
+  },
+  {
+   "id": "dumbbell_incline_press",
+   "name": "哑铃上斜卧推",
+   "nameEn": "Dumbbell Incline Press",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上斜凳面，哑铃沿胸侧推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_incline_press.mp4",
+   "photo": "exercises/dumbbell_incline_press.jpg"
+  },
+  {
+   "id": "dumbbell_decline_press",
+   "name": "哑铃下斜卧推",
+   "nameEn": "Dumbbell Decline Press",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "下斜凳面，哑铃触胸推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_decline_press.mp4",
+   "photo": "exercises/dumbbell_decline_press.jpg"
+  },
+  {
+   "id": "dumbbell_fly",
+   "name": "哑铃飞鸟",
+   "nameEn": "Dumbbell Fly",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "手肘微屈，双臂向中间夹。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_fly.mp4",
+   "photo": "exercises/dumbbell_fly.jpg"
+  },
+  {
+   "id": "dumbbell_incline_fly",
+   "name": "哑铃上斜飞鸟",
+   "nameEn": "Dumbbell Incline Fly",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上斜凳面，哑铃画弧夹胸。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_incline_fly.mp4",
+   "photo": "exercises/dumbbell_incline_fly.jpg"
+  },
+  {
+   "id": "dumbbell_pullover",
+   "name": "哑铃仰卧上拉",
+   "nameEn": "Dumbbell Pullover",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "手肘微屈，哑铃下放至头后。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_pullover.mp4",
+   "photo": "exercises/dumbbell_pullover.jpg"
+  },
+  {
+   "id": "dumbbell_shoulder_press",
+   "name": "哑铃推举",
+   "nameEn": "Dumbbell Shoulder Press",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "核心收紧，哑铃垂直上推。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_shoulder_press.mp4",
+   "photo": "exercises/dumbbell_shoulder_press.jpg"
+  },
+  {
+   "id": "dumbbell_arnold_press",
+   "name": "哑铃阿诺德推举",
+   "nameEn": "Dumbbell Arnold Press",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "旋转手腕，哑铃向上推起。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_arnold_press.mp4",
+   "photo": "exercises/dumbbell_arnold_press.jpg"
+  },
+  {
+   "id": "dumbbell_lateral_raise",
+   "name": "哑铃侧平举",
+   "nameEn": "Dumbbell Lateral Raise",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "手肘微屈，侧向抬起哑铃。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_lateral_raise.mp4",
+   "photo": "exercises/dumbbell_lateral_raise.jpg"
+  },
+  {
+   "id": "dumbbell_front_raise",
+   "name": "哑铃前平举",
+   "nameEn": "Dumbbell Front Raise",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "掌心向上，哑铃抬至肩高。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_front_raise.mp4",
+   "photo": "exercises/dumbbell_front_raise.jpg"
+  },
+  {
+   "id": "dumbbell_rear_delt_fly",
+   "name": "哑铃俯身飞鸟",
+   "nameEn": "Dumbbell Rear Delt Fly",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "俯身屈肘，哑铃向两侧打开。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_rear_delt_fly.mp4",
+   "photo": "exercises/dumbbell_rear_delt_fly.jpg"
+  },
+  {
+   "id": "dumbbell_shrug",
+   "name": "哑铃耸肩",
+   "nameEn": "Dumbbell Shrug",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肩膀下沉，斜方肌发力耸肩。",
+   "muscles": [
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_shrug.mp4",
+   "photo": "exercises/dumbbell_shrug.jpg"
+  },
+  {
+   "id": "dumbbell_row",
+   "name": "哑铃单臂划船",
+   "nameEn": "Dumbbell One-Arm Row",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "单臂撑凳，哑铃拉向髋部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_row.mp4",
+   "photo": "exercises/dumbbell_row.jpg"
+  },
+  {
+   "id": "dumbbell_incline_row",
+   "name": "哑铃上斜划船",
+   "nameEn": "Dumbbell Incline Row",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "上斜凳面，哑铃拉向腹部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_incline_row.mp4",
+   "photo": "exercises/dumbbell_incline_row.jpg"
+  },
+  {
+   "id": "dumbbell_renegade_row",
+   "name": "哑铃撑地划船",
+   "nameEn": "Dumbbell Renegade Row",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "平板支撑，单臂交替划船。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "dumbbell_biceps_curl",
+   "name": "哑铃弯举",
+   "nameEn": "Dumbbell Biceps Curl",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部固定，哑铃弯举至肩前。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_biceps_curl.mp4",
+   "photo": "exercises/dumbbell_biceps_curl.jpg"
+  },
+  {
+   "id": "dumbbell_hammer_curl",
+   "name": "哑铃锤式弯举",
+   "nameEn": "Dumbbell Hammer Curl",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "掌心相对，前臂发力弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.brachialis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_hammer_curl.mp4",
+   "photo": "exercises/dumbbell_hammer_curl.jpg"
+  },
+  {
+   "id": "dumbbell_incline_curl",
+   "name": "哑铃上斜弯举",
+   "nameEn": "Dumbbell Incline Curl",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "上斜凳面，哑铃缓慢弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "dumbbell_concentration_curl",
+   "name": "哑铃集中弯举",
+   "nameEn": "Dumbbell Concentration Curl",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "肘部抵膝，单臂集中弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_concentration_curl.mp4",
+   "photo": "exercises/dumbbell_concentration_curl.jpg"
+  },
+  {
+   "id": "dumbbell_triceps_extension",
+   "name": "哑铃颈后臂屈伸",
+   "nameEn": "Dumbbell Overhead Triceps Extension",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手托铃，下放至头后伸直。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "dumbbell_kickback",
+   "name": "哑铃俯身臂屈伸",
+   "nameEn": "Dumbbell Triceps Kickback",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "俯身固定上臂，向后伸直。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_kickback.mp4",
+   "photo": "exercises/dumbbell_kickback.jpg"
+  },
+  {
+   "id": "dumbbell_lunge",
+   "name": "哑铃箭步蹲",
+   "nameEn": "Dumbbell Lunge",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "向前迈步，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_lunge.mp4",
+   "photo": "exercises/dumbbell_lunge.jpg"
+  },
+  {
+   "id": "dumbbell_bulgarian_split_squat",
+   "name": "哑铃保加利亚分腿蹲",
+   "nameEn": "Dumbbell Bulgarian Split Squat",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "后脚搭凳，前腿屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_bulgarian_split_squat.mp4",
+   "photo": "exercises/dumbbell_bulgarian_split_squat.jpg"
+  },
+  {
+   "id": "dumbbell_step_up",
+   "name": "哑铃登阶",
+   "nameEn": "Dumbbell Step-Up",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单脚踩稳，蹬地站上台阶。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_step_up.mp4",
+   "photo": "exercises/dumbbell_step_up.jpg"
+  },
+  {
+   "id": "dumbbell_romanian_deadlift",
+   "name": "哑铃罗马尼亚硬拉",
+   "nameEn": "Dumbbell Romanian Deadlift",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "髋部后移，哑铃贴腿下放。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    },
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_romanian_deadlift.mp4",
+   "photo": "exercises/dumbbell_romanian_deadlift.jpg"
+  },
+  {
+   "id": "dumbbell_sumo_squat",
+   "name": "哑铃相扑深蹲",
+   "nameEn": "Dumbbell Sumo Squat",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "宽站距，膝盖外展下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_sumo_squat.mp4",
+   "photo": "exercises/dumbbell_sumo_squat.jpg"
+  },
+  {
+   "id": "dumbbell_calf_raise",
+   "name": "哑铃提踵",
+   "nameEn": "Dumbbell Calf Raise",
+   "equipment": "dumbbell",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "前脚掌发力，脚跟抬高。",
+   "muscles": [
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.soleus",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/dumbbell_calf_raise.mp4",
+   "photo": "exercises/dumbbell_calf_raise.jpg"
+  },
+  {
+   "id": "dumbbell_goblet_squat",
+   "name": "哑铃高脚杯深蹲",
+   "nameEn": "Dumbbell Goblet Squat",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手托铃，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "dumbbell_rear_lunge",
+   "name": "哑铃后撤箭步蹲",
+   "nameEn": "Dumbbell Reverse Lunge",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "向后撤步，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/dumbbell_rear_lunge.mp4",
+   "photo": "exercises/dumbbell_rear_lunge.jpg"
+  },
+  {
+   "id": "dumbbell_farmer_carry",
+   "name": "哑铃农夫行走",
+   "nameEn": "Dumbbell Farmer's Carry",
+   "equipment": "dumbbell",
+   "mechanic": "compound",
+   "forceType": "static",
+   "laterality": "bilateral",
+   "instructions": "挺胸收腹，双手提铃行走。",
+   "muscles": [
+    {
+     "muscleId": "forearm.flexors",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "stabilizer",
+     "contribution": 0.2
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "machine_leg_press",
+   "name": "器械腿举",
+   "nameEn": "Machine Leg Press",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双脚踩稳，屈膝下放至九十度。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_leg_press.mp4",
+   "photo": "exercises/machine_leg_press.jpg"
+  },
+  {
+   "id": "machine_hack_squat",
+   "name": "器械哈克深蹲",
+   "nameEn": "Machine Hack Squat",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "背部贴垫，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_hack_squat.mp4",
+   "photo": "exercises/machine_hack_squat.jpg"
+  },
+  {
+   "id": "machine_leg_extension",
+   "name": "器械腿屈伸",
+   "nameEn": "Machine Leg Extension",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "勾住滚垫，伸直膝盖。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "antagonist",
+     "contribution": 0.1
+    }
+   ],
+   "video": "exercises/machine_leg_extension.mp4",
+   "photo": "exercises/machine_leg_extension.jpg"
+  },
+  {
+   "id": "machine_leg_curl",
+   "name": "器械俯卧腿弯举",
+   "nameEn": "Machine Lying Leg Curl",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "脚踝勾垫，屈膝收紧腘绳肌。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_leg_curl.mp4",
+   "photo": "exercises/machine_leg_curl.jpg"
+  },
+  {
+   "id": "machine_seated_leg_curl",
+   "name": "器械坐姿腿弯举",
+   "nameEn": "Machine Seated Leg Curl",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "坐姿勾腿，缓慢屈膝。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_seated_leg_curl.mp4",
+   "photo": "exercises/machine_seated_leg_curl.jpg"
+  },
+  {
+   "id": "machine_hip_abduction",
+   "name": "器械髋外展",
+   "nameEn": "Machine Hip Abduction",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "坐姿外展，感受臀中肌发力。",
+   "muscles": [
+    {
+     "muscleId": "glute.medius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_hip_abduction.mp4",
+   "photo": "exercises/machine_hip_abduction.jpg"
+  },
+  {
+   "id": "machine_hip_adduction",
+   "name": "器械髋内收",
+   "nameEn": "Machine Hip Adduction",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "坐姿内收，双腿向中间夹。",
+   "muscles": [
+    {
+     "muscleId": "leg.adductors",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_hip_adduction.mp4",
+   "photo": "exercises/machine_hip_adduction.jpg"
+  },
+  {
+   "id": "machine_glute_kickback",
+   "name": "器械后踢腿",
+   "nameEn": "Machine Glute Kickback",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单腿后踢，臀部收紧。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "machine_chest_press",
+   "name": "器械推胸",
+   "nameEn": "Machine Chest Press",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "背贴靠垫，向前推起把手。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_chest_press.mp4",
+   "photo": "exercises/machine_chest_press.jpg"
+  },
+  {
+   "id": "machine_incline_chest_press",
+   "name": "器械上斜推胸",
+   "nameEn": "Machine Incline Chest Press",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上斜轨迹，向前上方推起。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_incline_chest_press.mp4",
+   "photo": "exercises/machine_incline_chest_press.jpg"
+  },
+  {
+   "id": "machine_pec_deck",
+   "name": "器械夹胸",
+   "nameEn": "Machine Pec Deck",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双臂内收，向中间夹胸。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_pec_deck.mp4",
+   "photo": "exercises/machine_pec_deck.jpg"
+  },
+  {
+   "id": "machine_shoulder_press",
+   "name": "器械推肩",
+   "nameEn": "Machine Shoulder Press",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "坐姿推举，把手向上推起。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_shoulder_press.mp4",
+   "photo": "exercises/machine_shoulder_press.jpg"
+  },
+  {
+   "id": "machine_lateral_raise",
+   "name": "器械侧平举",
+   "nameEn": "Machine Lateral Raise",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "手臂微屈，侧向抬起。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_lateral_raise.mp4",
+   "photo": "exercises/machine_lateral_raise.jpg"
+  },
+  {
+   "id": "machine_reverse_fly",
+   "name": "器械反向飞鸟",
+   "nameEn": "Machine Reverse Fly",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "双臂打开，向后展开。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_reverse_fly.mp4",
+   "photo": "exercises/machine_reverse_fly.jpg"
+  },
+  {
+   "id": "machine_lat_pulldown",
+   "name": "器械高位下拉",
+   "nameEn": "Machine Lat Pulldown",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "下拉把手至锁骨，感受背阔肌。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_lat_pulldown.mp4",
+   "photo": "exercises/machine_lat_pulldown.jpg"
+  },
+  {
+   "id": "machine_seated_row",
+   "name": "器械坐姿划船",
+   "nameEn": "Machine Seated Row",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "挺胸，把手拉向腹部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_seated_row.mp4",
+   "photo": "exercises/machine_seated_row.jpg"
+  },
+  {
+   "id": "machine_chest_supported_row",
+   "name": "器械俯身划船",
+   "nameEn": "Machine Chest-Supported Row",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "胸部贴垫，把手拉向身体。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "machine_high_row",
+   "name": "器械高位划船",
+   "nameEn": "Machine High Row",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "高位下拉，把手拉向胸口。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_high_row.mp4",
+   "photo": "exercises/machine_high_row.jpg"
+  },
+  {
+   "id": "machine_preacher_curl",
+   "name": "器械牧师凳弯举",
+   "nameEn": "Machine Preacher Curl",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "上臂贴垫，缓慢弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_preacher_curl.mp4",
+   "photo": "exercises/machine_preacher_curl.jpg"
+  },
+  {
+   "id": "machine_biceps_curl",
+   "name": "器械弯举",
+   "nameEn": "Machine Biceps Curl",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部固定，弯举至肩前。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_biceps_curl.mp4",
+   "photo": "exercises/machine_biceps_curl.jpg"
+  },
+  {
+   "id": "machine_triceps_extension",
+   "name": "器械臂屈伸",
+   "nameEn": "Machine Triceps Extension",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "上臂固定，伸直肘部。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_triceps_extension.mp4",
+   "photo": "exercises/machine_triceps_extension.jpg"
+  },
+  {
+   "id": "machine_triceps_dip",
+   "name": "器械双杠臂屈伸",
+   "nameEn": "Machine Triceps Dip",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "屈肘下放，撑起身体。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_triceps_dip.mp4",
+   "photo": "exercises/machine_triceps_dip.jpg"
+  },
+  {
+   "id": "machine_calf_raise",
+   "name": "器械站姿提踵",
+   "nameEn": "Machine Standing Calf Raise",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "前脚掌发力，脚跟抬高。",
+   "muscles": [
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.soleus",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_calf_raise.mp4",
+   "photo": "exercises/machine_calf_raise.jpg"
+  },
+  {
+   "id": "machine_seated_calf_raise",
+   "name": "器械坐姿提踵",
+   "nameEn": "Machine Seated Calf Raise",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "坐姿提踵，小腿发力。",
+   "muscles": [
+    {
+     "muscleId": "calf.soleus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_seated_calf_raise.mp4",
+   "photo": "exercises/machine_seated_calf_raise.jpg"
+  },
+  {
+   "id": "machine_abdominal_crunch",
+   "name": "器械卷腹",
+   "nameEn": "Machine Abdominal Crunch",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "收紧腹部，向前卷腹。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/machine_abdominal_crunch.mp4",
+   "photo": "exercises/machine_abdominal_crunch.jpg"
+  },
+  {
+   "id": "machine_torso_rotation",
+   "name": "器械转体",
+   "nameEn": "Machine Torso Rotation",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "固定骨盆，躯干缓慢旋转。",
+   "muscles": [
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "machine_glute_bridge",
+   "name": "器械臀桥",
+   "nameEn": "Machine Glute Bridge",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肩胛靠垫，臀部发力顶髋。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "machine_standing_leg_curl",
+   "name": "器械站姿腿弯举",
+   "nameEn": "Machine Standing Leg Curl",
+   "equipment": "machine",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "单腿勾垫，屈膝收紧。",
+   "muscles": [
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "machine_assisted_pull_up",
+   "name": "器械助力引体向上",
+   "nameEn": "Machine Assisted Pull-Up",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "借助助力，向上拉起身体。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/machine_assisted_pull_up.mp4",
+   "photo": "exercises/machine_assisted_pull_up.jpg"
+  },
+  {
+   "id": "smith_machine_squat",
+   "name": "史密斯深蹲",
+   "nameEn": "Smith Machine Squat",
+   "equipment": "machine",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "背部贴垫，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/smith_machine_squat.mp4",
+   "photo": "exercises/smith_machine_squat.jpg"
+  },
+  {
+   "id": "cable_crossover",
+   "name": "绳索夹胸",
+   "nameEn": "Cable Crossover",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双臂画弧，向身体前方夹胸。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_crossover.mp4",
+   "photo": "exercises/cable_crossover.jpg"
+  },
+  {
+   "id": "cable_low_fly",
+   "name": "绳索低位飞鸟",
+   "nameEn": "Cable Low Fly",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "由下向上，双手向中间夹。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_low_fly.mp4",
+   "photo": "exercises/cable_low_fly.jpg"
+  },
+  {
+   "id": "cable_high_fly",
+   "name": "绳索高位飞鸟",
+   "nameEn": "Cable High Fly",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "由上向下，双手向中间夹。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cable_face_pull",
+   "name": "绳索面拉",
+   "nameEn": "Cable Face Pull",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "拉向面部，手肘向外打开。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_face_pull.mp4",
+   "photo": "exercises/cable_face_pull.jpg"
+  },
+  {
+   "id": "cable_rear_delt_fly",
+   "name": "绳索反向飞鸟",
+   "nameEn": "Cable Rear Delt Fly",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "手臂微屈，向后侧展开。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_rear_delt_fly.mp4",
+   "photo": "exercises/cable_rear_delt_fly.jpg"
+  },
+  {
+   "id": "cable_lateral_raise",
+   "name": "绳索单臂侧平举",
+   "nameEn": "Cable Single-Arm Lateral Raise",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单臂侧抬，手肘略高于腕。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_lateral_raise.mp4",
+   "photo": "exercises/cable_lateral_raise.jpg"
+  },
+  {
+   "id": "cable_front_raise",
+   "name": "绳索单臂前平举",
+   "nameEn": "Cable Single-Arm Front Raise",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单臂前抬，把手至肩高。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_front_raise.mp4",
+   "photo": "exercises/cable_front_raise.jpg"
+  },
+  {
+   "id": "cable_lat_pulldown",
+   "name": "绳索高位下拉",
+   "nameEn": "Cable Lat Pulldown",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "下拉至锁骨，背部收紧。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_lat_pulldown.mp4",
+   "photo": "exercises/cable_lat_pulldown.jpg"
+  },
+  {
+   "id": "cable_straight_arm_pulldown",
+   "name": "绳索直臂下压",
+   "nameEn": "Cable Straight-Arm Pulldown",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "直臂下压，感受背阔肌。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_straight_arm_pulldown.mp4",
+   "photo": "exercises/cable_straight_arm_pulldown.jpg"
+  },
+  {
+   "id": "cable_seated_row",
+   "name": "绳索坐姿划船",
+   "nameEn": "Cable Seated Row",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "挺胸，把手拉向腹部。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_seated_row.mp4",
+   "photo": "exercises/cable_seated_row.jpg"
+  },
+  {
+   "id": "cable_single_arm_row",
+   "name": "绳索单臂划船",
+   "nameEn": "Cable Single-Arm Row",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "单臂拉向髋部，躯干稳定。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_single_arm_row.mp4",
+   "photo": "exercises/cable_single_arm_row.jpg"
+  },
+  {
+   "id": "cable_rope_triceps_pushdown",
+   "name": "绳索下压",
+   "nameEn": "Cable Rope Triceps Pushdown",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "肘部固定，向下伸直手臂。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_rope_triceps_pushdown.mp4",
+   "photo": "exercises/cable_rope_triceps_pushdown.jpg"
+  },
+  {
+   "id": "cable_single_arm_triceps_pushdown",
+   "name": "绳索单臂下压",
+   "nameEn": "Cable Single-Arm Triceps Pushdown",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单臂下压，肘部贴近身体。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_single_arm_triceps_pushdown.mp4",
+   "photo": "exercises/cable_single_arm_triceps_pushdown.jpg"
+  },
+  {
+   "id": "cable_overhead_triceps_extension",
+   "name": "绳索过顶臂屈伸",
+   "nameEn": "Cable Overhead Triceps Extension",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "背对绳索，向前上方伸直。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_overhead_triceps_extension.mp4",
+   "photo": "exercises/cable_overhead_triceps_extension.jpg"
+  },
+  {
+   "id": "cable_biceps_curl",
+   "name": "绳索弯举",
+   "nameEn": "Cable Biceps Curl",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部固定，弯举至肩前。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_biceps_curl.mp4",
+   "photo": "exercises/cable_biceps_curl.jpg"
+  },
+  {
+   "id": "cable_hammer_curl",
+   "name": "绳索锤式弯举",
+   "nameEn": "Cable Hammer Curl",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "掌心相对，前臂发力弯举。",
+   "muscles": [
+    {
+     "muscleId": "arm.brachialis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_hammer_curl.mp4",
+   "photo": "exercises/cable_hammer_curl.jpg"
+  },
+  {
+   "id": "cable_high_pulley_curl",
+   "name": "绳索高位弯举",
+   "nameEn": "Cable High Pulley Curl",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "高位弯举，感受肱二头肌。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.brachialis",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cable_upright_row",
+   "name": "绳索直立划船",
+   "nameEn": "Cable Upright Row",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肘部高于手腕，拉至胸口。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.lateral",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_upright_row.mp4",
+   "photo": "exercises/cable_upright_row.jpg"
+  },
+  {
+   "id": "cable_woodchop",
+   "name": "绳索伐木",
+   "nameEn": "Cable Woodchop",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "转体下拉，核心控制。",
+   "muscles": [
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "glute.medius",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "cable_pallof_press",
+   "name": "绳索抗旋转推",
+   "nameEn": "Cable Pallof Press",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "static",
+   "laterality": "bilateral",
+   "instructions": "双手前推，抵抗旋转。",
+   "muscles": [
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "glute.medius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "cable_crunch",
+   "name": "绳索卷腹",
+   "nameEn": "Cable Crunch",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "跪姿卷腹，腹部收紧。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_crunch.mp4",
+   "photo": "exercises/cable_crunch.jpg"
+  },
+  {
+   "id": "cable_glute_kickback",
+   "name": "绳索后踢腿",
+   "nameEn": "Cable Glute Kickback",
+   "equipment": "cable",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单腿后踢，臀大肌收紧。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/cable_glute_kickback.mp4",
+   "photo": "exercises/cable_glute_kickback.jpg"
+  },
+  {
+   "id": "cable_pull_through",
+   "name": "绳索胯下拉",
+   "nameEn": "Cable Pull-Through",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "屈髋后移，臀部向前顶。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "cable_chest_press",
+   "name": "绳索推胸",
+   "nameEn": "Cable Chest Press",
+   "equipment": "cable",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双脚前后站，向前推胸。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/cable_chest_press.mp4",
+   "photo": "exercises/cable_chest_press.jpg"
+  },
+  {
+   "id": "push_up",
+   "name": "俯卧撑",
+   "nameEn": "Push-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "身体成直线，屈肘下放。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/push_up.mp4",
+   "photo": "exercises/push_up.jpg"
+  },
+  {
+   "id": "incline_push_up",
+   "name": "上斜俯卧撑",
+   "nameEn": "Incline Push-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手撑高，屈肘下放。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "decline_push_up",
+   "name": "下斜俯卧撑",
+   "nameEn": "Decline Push-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双脚垫高，屈肘下放。",
+   "muscles": [
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "arm.triceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/decline_push_up.mp4",
+   "photo": "exercises/decline_push_up.jpg"
+  },
+  {
+   "id": "diamond_push_up",
+   "name": "钻石俯卧撑",
+   "nameEn": "Diamond Push-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手并拢，屈肘下放。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "chest.pec_major.clavicular",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "pull_up",
+   "name": "引体向上",
+   "nameEn": "Pull-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "肩胛下沉，拉起至下巴过杠。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/pull_up.mp4",
+   "photo": "exercises/pull_up.jpg"
+  },
+  {
+   "id": "chin_up",
+   "name": "反握引体向上",
+   "nameEn": "Chin-Up",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "反握单杠，拉起至下巴过杠。",
+   "muscles": [
+    {
+     "muscleId": "arm.biceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/chin_up.mp4",
+   "photo": "exercises/chin_up.jpg"
+  },
+  {
+   "id": "triceps_dip",
+   "name": "双杠臂屈伸",
+   "nameEn": "Triceps Dip",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "屈肘下放，撑起身体。",
+   "muscles": [
+    {
+     "muscleId": "arm.triceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "chest.pec_major.sternal",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/triceps_dip.mp4",
+   "photo": "exercises/triceps_dip.jpg"
+  },
+  {
+   "id": "bodyweight_squat",
+   "name": "徒手深蹲",
+   "nameEn": "Bodyweight Squat",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "屈髋屈膝，下蹲至大腿平行。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/bodyweight_squat.mp4",
+   "photo": "exercises/bodyweight_squat.jpg"
+  },
+  {
+   "id": "bodyweight_reverse_lunge",
+   "name": "徒手后撤箭步蹲",
+   "nameEn": "Bodyweight Reverse Lunge",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "向后撤步，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/bodyweight_reverse_lunge.mp4",
+   "photo": "exercises/bodyweight_reverse_lunge.jpg"
+  },
+  {
+   "id": "bodyweight_walking_lunge",
+   "name": "徒手行走箭步蹲",
+   "nameEn": "Bodyweight Walking Lunge",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "向前迈步，交替下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "bodyweight_single_leg_glute_bridge",
+   "name": "单腿臀桥",
+   "nameEn": "Single-Leg Glute Bridge",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单脚踩地，臀部向上顶。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/bodyweight_single_leg_glute_bridge.mp4",
+   "photo": "exercises/bodyweight_single_leg_glute_bridge.jpg"
+  },
+  {
+   "id": "bodyweight_calf_raise",
+   "name": "徒手提踵",
+   "nameEn": "Bodyweight Calf Raise",
+   "equipment": "bodyweight",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "前脚掌发力，脚跟抬高。",
+   "muscles": [
+    {
+     "muscleId": "calf.gastrocnemius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "calf.soleus",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/bodyweight_calf_raise.mp4",
+   "photo": "exercises/bodyweight_calf_raise.jpg"
+  },
+  {
+   "id": "plank",
+   "name": "平板支撑",
+   "nameEn": "Plank",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "static",
+   "laterality": "bilateral",
+   "instructions": "核心收紧，身体保持直线。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "glute.medius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/plank.mp4",
+   "photo": "exercises/plank.jpg"
+  },
+  {
+   "id": "side_plank",
+   "name": "侧平板支撑",
+   "nameEn": "Side Plank",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "static",
+   "laterality": "unilateral",
+   "instructions": "侧身支撑，髋部抬高。",
+   "muscles": [
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "glute.medius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/side_plank.mp4",
+   "photo": "exercises/side_plank.jpg"
+  },
+  {
+   "id": "crunch",
+   "name": "卷腹",
+   "nameEn": "Crunch",
+   "equipment": "bodyweight",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "腹部收紧，肩胛离地。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/crunch.mp4",
+   "photo": "exercises/crunch.jpg"
+  },
+  {
+   "id": "bicycle_crunch",
+   "name": "自行车卷腹",
+   "nameEn": "Bicycle Crunch",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "unilateral",
+   "instructions": "交替屈膝，肘部碰对侧膝。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 0.8
+    }
+   ],
+   "video": "exercises/bicycle_crunch.mp4",
+   "photo": "exercises/bicycle_crunch.jpg"
+  },
+  {
+   "id": "hanging_leg_raise",
+   "name": "悬垂举腿",
+   "nameEn": "Hanging Leg Raise",
+   "equipment": "bodyweight",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "悬垂举腿，腹部收紧。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "forearm.flexors",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/hanging_leg_raise.mp4",
+   "photo": "exercises/hanging_leg_raise.jpg"
+  },
+  {
+   "id": "mountain_climber",
+   "name": "登山跑",
+   "nameEn": "Mountain Climber",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "交替提膝，核心稳定。",
+   "muscles": [
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "core.obliques",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  },
+  {
+   "id": "inverted_row",
+   "name": "反向划船",
+   "nameEn": "Inverted Row",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "身体成直线，拉起胸口。",
+   "muscles": [
+    {
+     "muscleId": "back.latissimus_dorsi",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "arm.biceps",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "wall_sit",
+   "name": "靠墙静蹲",
+   "nameEn": "Wall Sit",
+   "equipment": "bodyweight",
+   "mechanic": "compound",
+   "forceType": "static",
+   "laterality": "bilateral",
+   "instructions": "背靠墙下蹲，大腿平行。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "band_face_pull",
+   "name": "弹力带面拉",
+   "nameEn": "Band Face Pull",
+   "equipment": "band",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "拉向面部，肩胛后缩。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/band_face_pull.mp4",
+   "photo": "exercises/band_face_pull.jpg"
+  },
+  {
+   "id": "band_glute_kickback",
+   "name": "弹力带后踢腿",
+   "nameEn": "Band Glute Kickback",
+   "equipment": "band",
+   "mechanic": "isolation",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单腿后踢，臀部收紧。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ],
+   "video": "exercises/band_glute_kickback.mp4",
+   "photo": "exercises/band_glute_kickback.jpg"
+  },
+  {
+   "id": "band_lateral_walk",
+   "name": "弹力带侧向行走",
+   "nameEn": "Band Lateral Walk",
+   "equipment": "band",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "半蹲侧移，保持张力。",
+   "muscles": [
+    {
+     "muscleId": "glute.medius",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/band_lateral_walk.mp4",
+   "photo": "exercises/band_lateral_walk.jpg"
+  },
+  {
+   "id": "band_pull_apart",
+   "name": "弹力带扩胸",
+   "nameEn": "Band Pull-Apart",
+   "equipment": "band",
+   "mechanic": "isolation",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "双臂向两侧打开，肩胛后缩。",
+   "muscles": [
+    {
+     "muscleId": "shoulder.delt.posterior",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "back.rhomboids",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "back.trapezius",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ],
+   "video": "exercises/band_pull_apart.mp4",
+   "photo": "exercises/band_pull_apart.jpg"
+  },
+  {
+   "id": "kettlebell_swing",
+   "name": "壶铃摆动",
+   "nameEn": "Kettlebell Swing",
+   "equipment": "kettlebell",
+   "mechanic": "compound",
+   "forceType": "pull",
+   "laterality": "bilateral",
+   "instructions": "屈髋摆动，臀部发力。",
+   "muscles": [
+    {
+     "muscleId": "glute.maximus",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "leg.hamstrings",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "kettlebell_goblet_squat",
+   "name": "壶铃高脚杯深蹲",
+   "nameEn": "Kettlebell Goblet Squat",
+   "equipment": "kettlebell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "bilateral",
+   "instructions": "双手托铃，屈膝下蹲。",
+   "muscles": [
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "glute.maximus",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.adductors",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "core.rectus_abdominis",
+     "role": "stabilizer",
+     "contribution": 0.2
+    }
+   ]
+  },
+  {
+   "id": "kettlebell_turkish_get_up",
+   "name": "壶铃土耳其起立",
+   "nameEn": "Kettlebell Turkish Get-Up",
+   "equipment": "kettlebell",
+   "mechanic": "compound",
+   "forceType": "push",
+   "laterality": "unilateral",
+   "instructions": "单臂支撑，缓慢起身。",
+   "muscles": [
+    {
+     "muscleId": "core.obliques",
+     "role": "prime",
+     "contribution": 1.0
+    },
+    {
+     "muscleId": "shoulder.delt.anterior",
+     "role": "prime",
+     "contribution": 0.8
+    },
+    {
+     "muscleId": "glute.medius",
+     "role": "synergist",
+     "contribution": 0.5
+    },
+    {
+     "muscleId": "leg.quadriceps",
+     "role": "synergist",
+     "contribution": 0.5
+    }
+   ]
+  }
+ ]
+}

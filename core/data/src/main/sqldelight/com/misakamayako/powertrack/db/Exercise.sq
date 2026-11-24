@@ -1,0 +1,101 @@
+-- §3.1 动作库
+CREATE TABLE exercise (
+    id           TEXT NOT NULL PRIMARY KEY,
+    name         TEXT NOT NULL,
+    name_en      TEXT,
+    equipment    TEXT NOT NULL,
+    mechanic     TEXT NOT NULL,
+    force_type   TEXT,
+    laterality   TEXT NOT NULL,
+    default_unit TEXT NOT NULL DEFAULT 'KG',
+    instructions TEXT,
+    media_ref    TEXT,
+    is_custom    INTEGER NOT NULL DEFAULT 0,
+    created_at   INTEGER NOT NULL,
+    video_asset  TEXT,
+    photo_asset  TEXT
+);
+
+CREATE INDEX idx_exercise_name ON exercise(name COLLATE NOCASE);
+
+-- §2.4 动作 ↔ 肌肉：带权重和角色的多对多，PK 保证同一对只有一条
+CREATE TABLE exercise_muscle (
+    exercise_id   TEXT NOT NULL REFERENCES exercise(id) ON DELETE CASCADE,
+    muscle_id     TEXT NOT NULL REFERENCES muscle(id) ON DELETE RESTRICT,
+    role          TEXT NOT NULL,
+    contribution  REAL NOT NULL DEFAULT 1.0,
+    PRIMARY KEY (exercise_id, muscle_id),
+    CHECK (contribution >= 0.0 AND contribution <= 1.0)
+);
+
+CREATE INDEX idx_exercise_muscle_muscle ON exercise_muscle(muscle_id);
+
+selectAll:
+SELECT * FROM exercise ORDER BY name COLLATE NOCASE;
+
+selectById:
+SELECT * FROM exercise WHERE id = ?;
+
+-- 空字符串表示"不过滤"，避免动态 SQL
+search:
+SELECT DISTINCT e.*
+FROM exercise e
+LEFT JOIN exercise_muscle em ON em.exercise_id = e.id
+WHERE (:query = '' OR e.name LIKE '%' || :query || '%' OR e.name_en LIKE '%' || :query || '%')
+  AND (:muscleId = '' OR em.muscle_id = :muscleId)
+  AND (:equipment = '' OR e.equipment = :equipment)
+ORDER BY e.name COLLATE NOCASE
+LIMIT :limitCount;
+
+insert:
+INSERT OR IGNORE INTO exercise(
+    id, name, name_en, equipment, mechanic, force_type, laterality,
+    default_unit, instructions, media_ref, is_custom, created_at, video_asset, photo_asset
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+update:
+UPDATE exercise SET
+    name = ?, name_en = ?, equipment = ?, mechanic = ?, force_type = ?, laterality = ?,
+    default_unit = ?, instructions = ?, media_ref = ?, is_custom = ?,
+    video_asset = ?, photo_asset = ?
+WHERE id = ?;
+
+deleteById:
+DELETE FROM exercise WHERE id = ?;
+
+deleteCustomById:
+DELETE FROM exercise WHERE id = ? AND is_custom = 1;
+
+count:
+SELECT COUNT(*) FROM exercise;
+
+selectLinks:
+SELECT * FROM exercise_muscle;
+
+selectLinksForExercise:
+SELECT * FROM exercise_muscle WHERE exercise_id = ? ORDER BY contribution DESC;
+
+selectMuscleDetails:
+SELECT em.muscle_id AS muscleId,
+       m.name AS muscleName,
+       m.name_en AS muscleNameEn,
+       em.role AS role,
+       em.contribution AS contribution
+FROM exercise_muscle em
+JOIN muscle m ON m.id = em.muscle_id
+WHERE em.exercise_id = ?
+ORDER BY em.contribution DESC;
+
+insertLink:
+INSERT OR IGNORE INTO exercise_muscle(exercise_id, muscle_id, role, contribution)
+VALUES (?, ?, ?, ?);
+
+upsertLink:
+INSERT OR REPLACE INTO exercise_muscle(exercise_id, muscle_id, role, contribution)
+VALUES (?, ?, ?, ?);
+
+deleteLinksForExercise:
+DELETE FROM exercise_muscle WHERE exercise_id = ?;
+
+selectBySlug:
+SELECT id FROM exercise WHERE id = ? LIMIT 1;

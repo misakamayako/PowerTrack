@@ -1,0 +1,107 @@
+-- §2.5 计划侧结构
+CREATE TABLE routine (
+    id          TEXT NOT NULL PRIMARY KEY,
+    name        TEXT NOT NULL,
+    notes       TEXT,
+    tags        TEXT,
+    archived_at INTEGER,
+    created_at  INTEGER NOT NULL,
+    updated_at  INTEGER NOT NULL
+);
+
+CREATE TABLE routine_slot (
+    id             TEXT NOT NULL PRIMARY KEY,
+    routine_id     TEXT NOT NULL REFERENCES routine(id) ON DELETE CASCADE,
+    order_index    INTEGER NOT NULL,
+    exercise_id    TEXT NOT NULL REFERENCES exercise(id) ON DELETE RESTRICT,
+    superset_group TEXT,
+    rest_sec       INTEGER,
+    notes          TEXT
+);
+
+CREATE UNIQUE INDEX idx_routine_slot_order ON routine_slot(routine_id, order_index);
+
+CREATE TABLE routine_set_prescription (
+    id           TEXT NOT NULL PRIMARY KEY,
+    slot_id      TEXT NOT NULL REFERENCES routine_slot(id) ON DELETE CASCADE,
+    order_index  INTEGER NOT NULL,
+    set_type     TEXT NOT NULL,
+    is_warmup    INTEGER NOT NULL DEFAULT 0,
+    load_json    TEXT NOT NULL,
+    rep_json     TEXT NOT NULL,
+    rest_sec     INTEGER,
+    rpe          REAL,
+    progression  TEXT
+);
+
+CREATE UNIQUE INDEX idx_prescription_order ON routine_set_prescription(slot_id, order_index);
+
+selectActive:
+SELECT * FROM routine WHERE archived_at IS NULL ORDER BY updated_at DESC;
+
+selectAll:
+SELECT * FROM routine ORDER BY archived_at IS NOT NULL, updated_at DESC;
+
+selectById:
+SELECT * FROM routine WHERE id = ?;
+
+insert:
+INSERT INTO routine(id, name, notes, tags, archived_at, created_at, updated_at)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+-- §3.7：routine 有子表，禁止用 INSERT OR REPLACE（会触发级联删除），只能 UPDATE
+update:
+UPDATE routine SET name = ?, notes = ?, tags = ?, archived_at = ?, updated_at = ?
+WHERE id = ?;
+
+deleteById:
+DELETE FROM routine WHERE id = ?;
+
+updateName:
+UPDATE routine SET name = ?, updated_at = ? WHERE id = ?;
+
+updateArchived:
+UPDATE routine SET archived_at = ?, updated_at = ? WHERE id = ?;
+
+selectSlots:
+SELECT s.id AS id,
+       s.routine_id AS routineId,
+       s.order_index AS orderIndex,
+       s.exercise_id AS exerciseId,
+       s.superset_group AS supersetGroup,
+       s.rest_sec AS restSec,
+       s.notes AS notes,
+       e.name AS exerciseName
+FROM routine_slot s
+JOIN exercise e ON e.id = s.exercise_id
+WHERE s.routine_id = ?
+ORDER BY s.order_index;
+
+insertSlot:
+INSERT INTO routine_slot(
+    id, routine_id, order_index, exercise_id, superset_group, rest_sec, notes
+) VALUES (?, ?, ?, ?, ?, ?, ?);
+
+deleteSlotsForRoutine:
+DELETE FROM routine_slot WHERE routine_id = ?;
+
+selectPrescriptionsForRoutine:
+SELECT p.id AS id,
+       p.slot_id AS slotId,
+       p.order_index AS orderIndex,
+       p.set_type AS setType,
+       p.is_warmup AS isWarmup,
+       p.load_json AS loadJson,
+       p.rep_json AS repJson,
+       p.rest_sec AS restSec,
+       p.rpe AS rpe,
+       p.progression AS progression
+FROM routine_set_prescription p
+JOIN routine_slot s ON s.id = p.slot_id
+WHERE s.routine_id = ?
+ORDER BY s.order_index, p.order_index;
+
+insertPrescription:
+INSERT INTO routine_set_prescription(
+    id, slot_id, order_index, set_type, is_warmup, load_json, rep_json, rest_sec, rpe, progression
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
